@@ -311,13 +311,13 @@
                             
                             return {
                                 ...stock,
-                                "3天涨幅": changes['3天涨幅'] !== undefined ? `${changes['3天涨幅']}%` : "",
-                                "5天涨幅": changes['5天涨幅'] !== undefined ? `${changes['5天涨幅']}%` : "",
-                                "10天涨幅": changes['10天涨幅'] !== undefined ? `${changes['10天涨幅']}%` : "",
-                                "20天涨幅": changes['20天涨幅'] !== undefined ? `${changes['20天涨幅']}%` : "",
-                                "30天涨幅": changes['30天涨幅'] !== undefined ? `${changes['30天涨幅']}%` : "",
-                                "60天涨幅": changes['60天涨幅'] !== undefined ? `${changes['60天涨幅']}%` : "",
-                                "今年涨幅": changes['今年涨幅'] !== undefined ? `${changes['今年涨幅']}%` : "",
+                                "3天涨幅": stock["3天涨幅"] || "",
+                                "5天涨幅": stock["5天涨幅"] || "",
+                                "10天涨幅": stock["10天涨幅"] || "",
+                                "20天涨幅": stock["20天涨幅"] || "",
+                                "30天涨幅": stock["30天涨幅"] || "",
+                                "60天涨幅": stock["60天涨幅"] || "",
+                                "今年涨幅": stock["今年涨幅"] || ""
                             };
                         });
                         isDataLoaded = true;
